@@ -1,3 +1,1 @@
-
-const result = splitArrayIntoChunks([1, 2, 3, 4, 5, 6, 7], 3);
-console.log(result); // [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7 ] ]
+/* SOLO PARA PROBAR EL CODIGO CON NODEMON*/
