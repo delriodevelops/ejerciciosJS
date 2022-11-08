@@ -7,8 +7,7 @@ const arrNames = [
 ]
 
 function findById(id) {
-  const obj = arrNames.find(arrayObject => arrayObject.id === id)
-  return obj
+  return arrNames.find(arrayObject => arrayObject.id === id)
 }
 
 module.exports = findById

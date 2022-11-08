@@ -4,9 +4,8 @@ function fromBytesToFormattedSizeUnits(bytes, truncate = 3) {
     while (Math.abs(bytes) / 1000 ** i >= 1000) {
         i++
     }
-    const finalResult = Number(bytes / 1000 ** i).toPrecision(truncate) + scale[i]
+    return  Number(bytes / 1000 ** i).toPrecision(truncate) + scale[i]
 
-    return finalResult
 }
 
 const result = fromBytesToFormattedSizeUnits(1000);

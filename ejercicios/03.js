@@ -8,11 +8,13 @@ const arrCities = [
 ]
 
 function findCapital(array, country) {
-    let filteredArray = array
-    array.map((obj, i) => {
-        if (obj.country === country && obj.capital !== true) { filteredArray.splice(i,1) }
-    })
-    return filteredArray
+    // let filteredArray = array
+    // array.map((obj, i) => {
+    //     if (obj.country === country && obj.capital !== true) { filteredArray.splice(i,1) }
+    // })
+    // array.filter()
+    // return filteredArray
+    return array.filter((obj)=>obj.country ===country && !obj.capital)
 }
 
 module.exports= findCapital
